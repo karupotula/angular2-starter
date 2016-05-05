@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="2.0.0-beta.14/angular2-polyfills.js"></script>
+    <script src="https://npmcdn.com/typescript@1.8.10/lib/typescript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.27/system.js"></script>
+    <script src="2.0.0-beta.14/RX.js"></script>
+    <script src="angular2.js"></script>
+
+    <script src="2.0.0-beta.14/http.dev.js"></script>
+   
+    <link href="css/bluetheme.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            packages: { 'app': { defaultExtension: 'ts' } }
+        });
+        debugger;
+        System.import('app/main')
+              .then(null, console.error.bind(console));
+
+    <div>
+
+        <login-page></login-page>
+    </div>
+    <div>
+
+
+
+    </div>
+
+   
+</body>
+</html>
